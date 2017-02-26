@@ -25,7 +25,7 @@ SECRET_KEY = 'si9_9&eq=@adbt*m38q&ed@3sn2e%8+mi@mxu_**6cazxj!!m+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['http://ezgidiriboun.pythonanywhere.com']
+ALLOWED_HOSTS = ['ezgidiriboun.pythonanywhere.com']
 
 
 # Application definition

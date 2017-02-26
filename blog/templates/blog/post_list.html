@@ -1,6 +1,9 @@
 {% extends 'blog/base.html' %}
 {% block content %}
-	{% for post in posts %}
+	<table>
+	{% for post in posts %} 
+	<tr>
+		<td>
 		<div class="post">
 			<div class="date">
 				{{ post.yayinlanma_tarihi }}
@@ -10,5 +13,8 @@
 		  			
 		  	<p>{{ post.yazi|linebreaks }}</p>
 		</div>
+	</td>
+	</tr>
 	{% endfor %}
+</table>
 {% endblock content %}

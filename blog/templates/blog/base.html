@@ -17,14 +17,19 @@
 <div class="content container">
 	<div class="row">
 		<div class="col-md-B">
+			<table>
 {% for post in posts %}
+<tr>
+		<td>
 <div	class="post">														
 	<div class="date">{{	post.yayinlanma_tarihi	}}																								</div>																								 
 	<h1><a	href="">{{	post.baslik	}}</a></h1>																								
 	<p>{{	post.yazi|linebreaks	}}</p>																			
-</div>																
+</div>	
+</td>
+	</tr>															
 {%	endfor	%}
-
+</table>
    </div>
   </div>
  </div>

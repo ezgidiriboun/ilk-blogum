@@ -60,7 +60,5 @@ h1, h2, h3, h4 {
  color: #000000; 
 }
 table, tr, td {
-	width: 1190px;
-    border: 3px solid black;
-    color:#8B2323;
+    border: 1px solid black;
 }

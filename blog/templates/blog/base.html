@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
 <div class="page-header">
 	<h1><a href="/"> Ezgi'nin Blogu </a></h1>
 </div>
@@ -17,18 +18,17 @@
 	<div class="row">
 		<div class="col-md-B">
 {% for post in posts %}
-<div class="post">
-	<div class="date">
-		{{ post.yayinlanma_tarihi }}
-	</div>
-	<h1><a href="">{{	post.baslik	}}</a></h1>
-  			
-  	<p>{{ post.yazi|linebreaks }}</p>
-</div>
-{% endfor %}
+<div	class="post">														
+	<div class="date">{{	post.yayinlanma_tarihi	}}																								</div>																								 
+	<h1><a	href="">{{	post.baslik	}}</a></h1>																								
+	<p>{{	post.yazi|linebreaks	}}</p>																			
+</div>																
+{%	endfor	%}
+
    </div>
   </div>
  </div>
+
 </body>
 
 

@@ -9,16 +9,12 @@
 <div>
 	<h1>Ezgi'nin Blogu</h1>
 </div>
+{% for post in posts %}
 <div>
-	<p>published:26.02.2017</p>
-	<h2><a href="">İlk Blogum</a></h2>
-	<p>Çok	heyecanlıyım!Bu	benim ilk blogum. Ne kadar zevkli bir işmiş	bilgisayarlarla	uğraşmak. Artık	bilgi sayar	başından	kalkmam.</p>
+  <p>published: {{ post.yayinlanma_tarihi	}}</p>			<h1><a	href="">{{	post.baslik	}}</a></h1>				
+  <p>{{	post.yazi|linebreaks }}</p>
 </div>
-<div>
-	<p>published:26.02.2017</p>
-	<h2><a href="">İkinci Blogum</a></h2>
-	<p>Çok	heyecanlıyım!Bu	benim ilk blogum. Ne kadar zevkli bir işmiş	bilgisayarlarla	uğraşmak. Artık	bilgi sayar	başından	kalkmam.</p>
-</div>
+{% endfor %}
 </body>
 
 
